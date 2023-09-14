@@ -1,0 +1,49 @@
+.iconButton {
+    width: 50px;
+    height: 50px;
+    transition: 0.5s ease;
+    border-radius: 100vmin;
+}
+
+.iconButton:hover, .iconButton[active='1'] {
+    background-color: #484e58;
+}
+
+.iconButton[action="delete"] {
+    background-color: darkred;
+    opacity: 100%;
+    transition: .3s;
+}
+
+.iconButton[action="delete"]:hover {
+    background-color: red;
+}
+
+.red {
+    color: rgb(255, 139, 139);
+}
+
+.detailsTitle {
+    margin: 0;
+}
+
+.detailsSubtitle {
+    color:rgb(166, 166, 166);
+    margin: 0;
+}
+
+.imageContainer {
+    max-height: 500px;
+    margin: 0;
+}
+
+.imageContainer img {
+    max-height: 500px;
+    max-width: 100%;
+}
+
+.infos {
+    padding: 10px;
+    background-color: #353a43;
+    margin-bottom: 20px;
+}

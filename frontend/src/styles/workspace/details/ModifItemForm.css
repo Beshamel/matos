@@ -1,0 +1,130 @@
+.modifItemFormWrapper {
+    overflow: hidden;
+    border-bottom: 1px solid rgb(88, 88, 88);
+    background-color: #353a43;
+    transition: .3s;
+}
+
+.modifItemFormWrapper[display="off"] {
+    height: 0;
+}
+
+.modifItemFormWrapper[display="on"] {
+    height: 350px;
+}
+
+.modifItemFormWrapper h2 {
+    margin: 0;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.modifItemForm {
+    height: 280px;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.modifItemFormWrapper[available='0'] {
+    background-color: #4e1e1e;
+}
+
+.formElement {
+    padding: 10px;
+    width: calc(50% - 20px);
+}
+
+.formNameInput {
+    background-color: #484e58;
+    border: 0 solid;
+    border-radius: 10px;
+    padding: 5px;
+    height: 20px;
+    color: white;
+    width: calc(100% - 10px);
+    transition: background-color .3s;
+}
+
+.modifItemFormWrapper[available='0'] .formNameInput {
+    background-color: #6b2f2f;
+    transition: .3s;
+}
+
+.formDescInput {
+    background-color: #484e58;
+    border: 0 solid;
+    border-radius: 10px;
+    padding: 5px;
+    height: 20px;
+    color: white;
+    width: calc(100% - 10px);
+    height: 190px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color .3s;
+}
+
+.modifItemFormWrapper[available='0'] .formDescInput {
+    background-color: #6b2f2f;
+    transition: background-color .3s;
+}
+
+.formAvailableInput {
+    border: 0 solid;
+    border-radius: 10px;
+    padding: 10px;
+    height: 20px;
+    color: white;
+    resize: none;
+    background-color: #484e58;
+    width: fit-content;
+    margin: 0;
+    transition: background-color .3s;
+}
+
+.modifItemFormWrapper[available='0'] .formAvailableInput {
+    background-color: #6b2f2f;
+    transition: background-color .3s;
+}
+
+.formCategoryInput {
+    border: 0 solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 40px;
+    color: white;
+    resize: none;
+    background-color: #484e58;
+    width: fit-content;
+    margin: 0;
+    transition: background-color .3s;
+}
+
+.modifItemFormWrapper[available='0'] .formCategoryInput {
+    background-color: #6b2f2f;
+    transition: background-color .3s;
+}
+
+.modifItemFormWrapper[available='0'] .formImageInput::before {
+    background-color: #6b2f2f;
+    transition: background-color .3s;
+}
+
+.formSubmit {
+    border: 0 solid;
+    border-radius: 10px;
+    padding: 10px;
+    height: 40px;
+    color: black;
+    background-color: #61dafb;
+    margin: 0;
+    transition: .3s;
+}
+
+.formSubmit[valid = '0'] {
+    background-color: #6b2f2f;
+    color: grey;
+    transition: .3s;
+}
